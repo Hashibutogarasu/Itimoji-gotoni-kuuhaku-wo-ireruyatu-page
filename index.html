@@ -13,6 +13,8 @@
                 var result = (value1.value);
                 var output1 = document.getElementById("output1");
                 result = result.replace(/(.)/g, "$1 " + value2.value);
+                result = result.replace(/ /g, "　");
+                
                 output1.value = result;
             }
         </script>
