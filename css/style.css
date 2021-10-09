@@ -19,6 +19,16 @@ header {
     align-items: center;
 }
 
+footer {
+    padding: 30px 4% 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
 h1 {
     margin: 0;
     padding: 0;
