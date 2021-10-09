@@ -12,7 +12,7 @@
                 var value2 = document.getElementById("input2");
                 var result = (value1.value);
                 var output1 = document.getElementById("output1");
-                result = result.replace(/(.)/g, "$1" + value2.value);
+                result = result.replace(/(.)/g, "" + value2.value);
                 result = result.replace(/ /g, "　$1" + value2.value);
                 
                 output1.value = result;
