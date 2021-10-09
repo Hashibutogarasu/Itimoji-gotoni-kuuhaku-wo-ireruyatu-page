@@ -12,12 +12,7 @@
                 var value2 = document.getElementById("input2");
                 var result = (value1.value) + (value2.value);
                 var output1 = document.getElementById("output1");
-
-                var s = output1;
-                for (var i = 0; i < s.length; ++i) {
-                    result +=((i + 1) + ' ' + s.charAt(i));
-                }
-
+                result = result.replace(/(.)/g, "$1&nbsp;");
                 output1.value = result;
             }
         </script>
