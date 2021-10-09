@@ -25,10 +25,12 @@
         <br />
         <h4>Twitterでよく見る一文字ごとに空白が入ってるやつをここで生成できます！</h4>
 
-        <form method="GET" action="/">
-        <p>Input：<input type="text" name="Input"></p>
-        <p><input type="submit" value="変換"></p>
+        <form method="GET" action="/" id="main_form">
+        <p>Input：<input id="input" type="text"></p>
         </form>
+
+        <div>Input: <span id="output"></span></div>
+        <div>Change: <span id="output2"></span></div>
 
         <footer>
             一文字ごとに何かを入れるツール by&nbsp;&nbsp;<a href="https://twitter.com/Columba_Karasu/">Columba_Karasu</a>

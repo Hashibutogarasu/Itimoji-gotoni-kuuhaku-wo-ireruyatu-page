@@ -1,22 +1,14 @@
-const url = new URL(location);
+$(function () {
+    var $input = $('#input');
+    var $output = $('#output');
+    $input.on('input', function (event) {
+        var value = $input.val();
+        $output.text(value);
+    });
 
-url.toString();
-// => "https://qiita.com/search?q=test&sort=like"
 
-// ’Ç‰Á
-url.searchParams.set("foo", "bar");
-
-url.searchParams.get("foo");
-// => "bar"
-
-url.toString();
-// => "https://qiita.com/search?q=test&sort=like&foo=bar"
-
-// XV
-url.searchParams.set("foo", "hoge");
-
-url.searchParams.get("foo");
-// => "hoge"
-
-url.toString();
-// => "https://qiita.com/search?q=test&sort=like&foo=hoge"
+    var $output2 = $('#output2');
+    $input.on('change', function (event) {
+        $output2.text($input.val());
+    });
+});
