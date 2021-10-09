@@ -54,6 +54,7 @@ li {
     font-size: 14px;
 }
 
-img{
+img {
     border: solid;
+    border-width: 1px;
 }
